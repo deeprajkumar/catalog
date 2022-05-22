@@ -1,6 +1,8 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, use_key_in_widget_constructors
 
 import 'package:flutter/material.dart';
+
+import '../ulits/route.dart';
 
 class LoginPage extends StatelessWidget {
   @override
@@ -17,7 +19,7 @@ class LoginPage extends StatelessWidget {
               height: 20.0,
             ),
             Text(
-              "Welcome",
+              "Welcome TO Login",
               style: TextStyle(
                 fontSize: 30,
                 fontWeight: FontWeight.bold,
@@ -47,10 +49,17 @@ class LoginPage extends StatelessWidget {
                   height: 20.0,
                 ),
                 ElevatedButton(
-                  child: Text("Login"),
-                  style: TextButton.styleFrom(),
+                  child: Text(
+                    "Login",
+                    style: TextStyle(
+                      fontSize: 20,
+                    ),
+                  ),
+                  style: TextButton.styleFrom(
+                    minimumSize: Size(110, 50),
+                  ),
                   onPressed: () {
-                    print("Hello00000");
+                    Navigator.pushNamed(context, MyRoute.homeRoute);
                   },
                 )
               ]),
