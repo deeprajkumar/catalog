@@ -15,7 +15,7 @@ class HomePage extends StatelessWidget {
         ),
       ),
       drawer: Drawer(),
-      bottomNavigationBar: Text("hii"),
+      bottomNavigationBar: Text("hsssii"),
     );
   }
 }
